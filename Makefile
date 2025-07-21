@@ -17,6 +17,6 @@ test:
 	@echo "Running tests..."
 	pytest tests
 
-check: format lint test
+checks: format lint test
 	@echo "Running all checks..."
 	@echo "All checks passed!"
