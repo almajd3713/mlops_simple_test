@@ -11,7 +11,12 @@ format:
 
 lint:
 	@echo "Running linters..."
-	flake8 src tests
+	pylint src tests
 
-check: format lint
+test:
+	@echo "Running tests..."
+	pytest tests
+
+check: format lint test
+	@echo "Running all checks..."
 	@echo "All checks passed!"
