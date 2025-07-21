@@ -8,6 +8,8 @@ install:
 format:
 	@echo "Formatting code with black..."
 	black src tests
+	@echo "Formatting code with isort..."
+	isort src tests
 
 lint:
 	@echo "Running linters..."
