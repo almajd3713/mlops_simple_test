@@ -17,7 +17,7 @@ lint:
 
 test:
 	@echo "Running tests..."
-	pytest tests
+	PYTHONPATH=. pytest tests
 
 checks: format lint test
 	@echo "Running all checks..."

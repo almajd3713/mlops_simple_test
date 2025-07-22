@@ -11,8 +11,8 @@ MODEL_PATH = "models/random_forest_model.joblib"
 
 def train_model():
     df, _ = download_and_save_iris()
-    x = df.drop(columns=["species"])
-    y = df["species"]
+    x = df.drop(columns=["target"])
+    y = df["target"]
 
     x_train, _, y_train, _ = train_test_split(x, y, test_size=0.2, random_state=42)
 
